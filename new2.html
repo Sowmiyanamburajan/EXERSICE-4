@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sort Books by ID</title> 
+<script>
+    
+    let books = [
+        { id: 3, title: 'JavaScript: The Good Parts', author: 'Douglas Crockford' },
+        { id: 1, title: 'Eloquent JavaScript', author: 'Marijn Haverbeke' },
+        { id: 2, title: 'You Don\'t Know JS', author: 'Kyle Simpson' }
+    ];
+
+    
+    function sortBooksById(booksArray) {
+        
+        booksArray.sort((a, b) => a.id - b.id);
+        return booksArray;
+    
+    let sortedBooks = sortBooksById(books);
+
+  
+    console.log(sortedBooks);
+</script>
+</head>
+<body>
+    <!-- You can add HTML content here if needed -->
+</body>
+</html>
